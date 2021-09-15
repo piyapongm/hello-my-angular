@@ -1,1 +1,36 @@
 /* You can add global styles to this file, and also import other style files */
+
+pre.command{
+    // code{
+    //     word-wrap: break-word;
+    // }
+    background-color: #444444;
+    padding: 0.1em 0.5em;
+    border: 1px solid #cccccc;
+    color: #2EFF1D;
+    border-radius: 5px;
+}
+
+pre.code{
+    // code{
+    //     word-wrap: break-word;
+    // }
+    background-color: #FCFCFC;
+    padding: 0.1em 0.5em;
+    border: 1px solid #cccccc;
+    color: #B95400;
+    border-radius: 5px;
+}
+
+div.url{
+    // code{
+    //     word-wrap: break-word;
+    // }
+    display: block;
+    background-color: #f3f8fd;
+    padding: 0.5em;
+    border: 1px solid #8ACEFD;
+    border-radius: 5px;
+    margin-bottom: 2em;
+    margin-top: 0.3em;
+}

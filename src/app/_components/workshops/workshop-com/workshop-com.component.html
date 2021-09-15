@@ -1,0 +1,126 @@
+<div class="container px-4 p-3">
+  <div class="row g-4">
+    <div class="col-12">
+      <h3>คำสั่งในการสร้าง Component</h3>
+      <pre class="command">
+          <code [innerText]="code_create_component"></code>
+    </pre>
+    </div>
+  </div>
+</div>
+
+<div class="container px-4 p-3">
+  <div class="row g-4">
+    <div class="col-12">
+      <h3>การเรียกใช้ Component</h3>
+      <pre class="code">
+            <code [innerText]="code_call_component"></code>
+        </pre>
+    </div>
+  </div>
+</div>
+
+
+<div class="container px-4 p-3">
+    <div class="row g-4">
+      <div class="col-12">
+        <h3>Workshop</h3>
+        <div class="row g-4 mb-3">
+            <div class="col">
+              <app-card1></app-card1>
+            </div>
+            <div class="col">
+              <app-card2></app-card2>
+            </div>
+            <div class="col">
+              <app-card3></app-card3>
+            </div>
+            <div class="col">
+              <app-card4></app-card4>
+            </div>
+          </div>
+        <pre class="command">
+              <code [innerText]="code_workshop_1"></code>
+          </pre>
+      </div>
+
+      <div class="col-12">
+          <span>dashboards.component.html</span>
+          <pre class="code">
+            <code [innerText]="code1"></code>
+          </pre>
+
+          <span>card1.component.html , card2.component.html , card3.component.html , card4.component.html</span>
+          <pre class="code">
+            <code [innerText]="code3"></code>
+          </pre>
+      </div>
+    </div>
+</div>
+
+
+<div class="container px-4 p-3">
+    <div class="row g-4">
+      <div class="col-12">
+        <h3>การ Bindding Data</h3>
+
+
+        <div class="row g-4 mb-3">
+            <div class="col">
+              <app-card-custom
+                [CARD_TITLE]="'TITLE 1'"
+                [CARD_DESCRIPTION]="'DESCRIPTION 1'"
+              ></app-card-custom>
+            </div>
+            <div class="col">
+              <app-card-custom
+                [CARD_TITLE]="'TITLE 2'"
+                [CARD_DESCRIPTION]="'DESCRIPTION 2'"
+              ></app-card-custom>
+            </div>
+            <div class="col">
+              <app-card-custom
+                [CARD_TITLE]="'TITLE 3'"
+                [CARD_DESCRIPTION]="'DESCRIPTION 3'"
+              ></app-card-custom>
+            </div>
+            <div class="col">
+              <app-card-custom
+                [CARD_TITLE]="'TITLE 4'"
+                [CARD_DESCRIPTION]="'DESCRIPTION 4'"
+              ></app-card-custom>
+            </div>
+          </div>
+
+
+
+        <pre class="command">
+              <code [innerText]="code_workshop_2"></code>
+        </pre>
+
+        <span>card-custom.component.ts</span>
+        <pre class="code">
+          <code [innerText]="code4"></code>
+        </pre>
+
+        <span>card-custom.component.html</span>
+        <pre class="code">
+          <code [innerText]="code5"></code>
+        </pre>
+
+
+        <span>dashboards.component.html</span>
+        <pre class="code">
+          <code [innerText]="code2"></code>
+        </pre>
+
+
+      </div>
+
+      
+      <div class="col-12">
+        <h3>การ Bindding Event</h3>
+        <app-vote></app-vote>
+      </div>
+    </div>
+  </div>

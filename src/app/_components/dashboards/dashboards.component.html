@@ -1,0 +1,68 @@
+<div class="container px-4 p-3">
+  <div class="row g-4">
+    <div class="col-12">
+      <h3>การเรียก Component</h3>
+    </div>
+    <div class="col">
+      <app-card1></app-card1>
+    </div>
+    <div class="col">
+      <app-card2></app-card2>
+    </div>
+    <div class="col">
+      <app-card3></app-card3>
+    </div>
+    <div class="col">
+      <app-card4></app-card4>
+    </div>
+  </div>
+
+  <div class="col-12 mt-3">
+      <span>.html</span>
+    <pre>
+        <code [innerText]="code1"></code>
+    </pre>
+  </div>
+</div>
+
+<div class="container px-4 p-3">
+  <div class="col-12">
+    <h3>การ Binding Data</h3>
+  </div>
+  <div class="row g-4">
+    <div class="col">
+      <app-card-custom
+        [CARD_TITLE]="'TITLE 1'"
+        [CARD_DESCRIPTION]="'DESCRIPTION 1'"
+      ></app-card-custom>
+    </div>
+    <div class="col">
+      <app-card-custom
+        [CARD_TITLE]="'TITLE 2'"
+        [CARD_DESCRIPTION]="'DESCRIPTION 2'"
+      ></app-card-custom>
+    </div>
+    <div class="col">
+      <app-card-custom
+        [CARD_TITLE]="'TITLE 3'"
+        [CARD_DESCRIPTION]="'DESCRIPTION 3'"
+      ></app-card-custom>
+    </div>
+    <div class="col">
+      <app-card-custom
+        [CARD_TITLE]="'TITLE 4'"
+        [CARD_DESCRIPTION]="'DESCRIPTION 4'"
+      ></app-card-custom>
+    </div>
+  </div>
+  <div class="col-12 mt-3">
+    <span>.ts</span>
+    <pre>
+        <code [innerText]="code3"></code>
+    </pre>
+    <span>.html</span>
+    <pre>
+        <code [innerText]="code2"></code>
+    </pre>
+  </div>
+</div>
